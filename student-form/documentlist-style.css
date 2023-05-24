@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.col{
+    display: flex;
+}
+
+.flex{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.input-flex {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-field {
+    display: flex;
+    gap: 1rem;
+    margin: .5rem 0rem;
+}
+
+input{
+    margin-top: 10px;
+    padding: .2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.input-flex1{
+    margin-top: 10px;
+}
+
+.price-list{
+    margin-top: 10px;
+}
+.flex h2{
+    color: #E5900F;
+    margin-bottom: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.document-container{
+    height: 46rem;
+    width: 890px;
+    background-color: #fff;
+    box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container {
+    background-color: #030D4E;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.head h1{
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.amountext{
+    font-weight: bold;
+    color: #E5900F;
+    margin-top: 20px;
+}
+
+.amountspace{
+    margin-top: -15px;
+}
+
+.note{
+    margin-left: 50px;
+    margin-top: -45px;
+}
+
+.note p{
+    color:#030D4E;
+    font-weight: bold;
+}
+
+span{
+    color: #E5900F;
+}
+
+input[type="number"]{
+    text-align: center;
+}
+
+.content{
+    border-radius: 12px;
+    border: solid 1.5px black;
+    width: 150px;
+}
+
+.content1{
+    border-radius: 12px;
+    border: solid 1.5px black;
+    width: 100px;
+}
+
+.backbtn{
+    background-color: #c1c1c1;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1rem;
+    position: absolute;
+    border-radius: 12px;
+    margin-left: 640px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.submit-btn{
+    background-color: #F8A01C;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1rem;
+    position: absolute;
+    border-radius: 12px;
+    margin-left: 740px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.button{
+    margin-left: -40px;
+}
+
+.submit-btn:hover{
+    background-color: #c1c1c1;
+}
+
+.backbtn:hover{
+    background-color: #c1c1c1;
+}
+
+
+
+
+

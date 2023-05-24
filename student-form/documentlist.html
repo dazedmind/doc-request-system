@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document List</title>
+    <link rel="stylesheet" href="documentlist-style.css">
+</head>
+<body>
+
+    <main>
+        <div class="document-container">
+            <div class="header-container">
+                Document List
+            </div>        
+            <div class="documentform">
+                <form action="" method="">
+                    <div class="col">
+                        <div class="flex">
+                            <h2>Request for:</h2>
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="diploma" name="diploma">
+                                        <label for="diploma">Diploma</label>
+                                    </div>
+                                </div>
+                            
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox" id="tor" name="tor">
+                                        <label for="tor">Transcript of Records</label>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="honorable" name="honorable">
+                                        <label for="honorable">Honorable Dismissal</label>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="grades" name="grades">
+                                        <label for="grades">Certificate of Grades</label>
+                                    </div>
+                                </div>
+                            
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="grad" name="grad">
+                                        <label for="grad">Certificate of Graduation</label>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="units" name="units">
+                                        <label for="units">Certificate of Earned Units</label>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="enrollment" name="enrollment">
+                                        <label for="enrollment">Certificate of Enrollment</label>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field1">
+                                <div class="input-flex1">
+                                        <input type="checkbox"  id="ched" name="ched">
+                                        <label for="ched">DFA/CHED Authentication <br>Of Student’s Record</label>
+                                    </div>
+                                </div>
+                        </div>
+    
+                        <div class="flex">
+                            <h2>Price</h2>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>550 Pesos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <div class="input-field">
+                                <div class="input-flex">
+                                     <div class="price-list">
+                                <p>241 Pesos</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>146 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>146 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>146 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>146 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>146 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <div class="price-list">
+                                <p>584 Pesos</p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+    
+                    <div class="flex">
+                        <h2>No. of Copies</h2>
+                        <div class="input-field">
+                            <div class="input-flex">
+                            <input type="number" class="content" id="diploma_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="tor_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="honorable_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="grades_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content"  id="grad_copies" value="0" min="0" onchange="calculateAmount()">
+                  </div>
+                        </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="units_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="enrollment_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+    
+                            <div class="input-field">
+                                <div class="input-flex">
+                            <input type="number" class="content" id="ched_copies" value="0" min="0" onchange="calculateAmount()">
+                        </div>
+                    </div>
+                    </div>
+    
+                    <div class="flex">
+                        <div class="amount">
+                        <h2>Amount</h2>
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number" class="content1" id="diploma_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number"  class="content1" id="tor_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number"  class="content1" id="honorable_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number"  class="content1" id="grades_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number" class="content1" id="grad_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number" class="content1" id="units_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number" class="content1" id="enrollment_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <input type="number" class="content1" id="ched_amount" value="0"> 
+                    </div>
+                </div>
+    
+                        <div class="input-field">
+                            <div class="input-flex">
+                        <div class="amountext"><label for="total_amount">Total:</label></div>
+                        <div class="amountspace"><input type="number"  class="content1" id="total_amount" value="0"></div>
+                    </div>
+                </div>
+                        </div> 
+                    </div>
+                    </div>
+                </form>
+    
+                <div class="note">
+                    <p>If the document/s you wish to request are not <br>listed above, kindly contact the registrar at <br><span>registrar@pit.edu.ph</span> for further assistance.</p>
+                </div>
+            </div>
+    
+            <div class="button">
+                <a href="studentform.html" class="backbtn">Back</a>
+                <input type="submit" class="submit-btn">
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+    function calculateAmount() {
+      var diploma_price = 550;
+      var tor_price = 241;
+      var honorable_price = 146;
+      var grades_price = 146;
+      var grad_price = 146;
+      var units_price = 146;
+      var enrollment_price = 146;
+      var ched_price = 584;
+      
+
+      var diploma_copies = parseInt(document.getElementById("diploma_copies").value);
+      var tor_copies = parseInt(document.getElementById("tor_copies").value);
+      var honorable_copies = parseInt(document.getElementById("honorable_copies").value);
+      var grades_copies = parseInt(document.getElementById("grades_copies").value);
+      var grad_copies = parseInt(document.getElementById("grad_copies").value);
+      var units_copies = parseInt(document.getElementById("units_copies").value);
+      var enrollment_copies = parseInt(document.getElementById("enrollment_copies").value);
+      var ched_copies = parseInt(document.getElementById("ched_copies").value);
+
+      var diploma_amount = diploma_price * diploma_copies;
+      var tor_amount = tor_price * tor_copies;
+      var honorable_amount = honorable_price * honorable_copies;
+      var grades_amount = grades_price * grades_copies;
+      var grad_amount = grad_price * grad_copies;
+      var units_amount = units_price * units_copies;
+      var enrollment_amount = enrollment_price * enrollment_copies;
+      var ched_amount = ched_price * ched_copies;
+
+      var total_amount = diploma_amount + tor_amount + honorable_amount + grades_amount + grad_amount + units_amount + enrollment_amount + ched_amount;
+
+      document.getElementById("diploma_amount").value = diploma_amount;
+      document.getElementById("tor_amount").value = tor_amount;
+      document.getElementById("honorable_amount").value = honorable_amount;
+      document.getElementById("grades_amount").value = grades_amount;
+      document.getElementById("grad_amount").value = grad_amount;
+      document.getElementById("units_amount").value = units_amount;
+      document.getElementById("enrollment_amount").value = enrollment_amount;
+      document.getElementById("ched_amount").value = ched_amount;
+      document.getElementById("total_amount").value = total_amount;
+    }
+    </script>
+
+    
+    
+</body>
+</html>

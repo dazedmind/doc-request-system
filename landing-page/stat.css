@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --blue: #030e4f;
+    --yellow:#F49F1C;
+    --black: #000000;
+    --white: #fff;
+    --gray: #DCDCDC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Poppins;
+}
+
+body{
+    display:grid;
+    place-items:center;
+    background-color: var(--white);
+}
+
+.nav-slider{
+    margin-top: 3rem;
+    margin-right: 450px;
+    background-color: var(--gray);
+    border-radius: 20px 20px 0px 0px;
+    width: px;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+ol{
+    display: flex;
+    position:relative;
+    margin: auto 0;
+
+}
+
+ol li{
+    margin: 0 30px;
+    list-style: none;
+    padding-right: 0px;
+    z-index: 111;
+}
+
+ol li a {
+    display: block;
+    color:#9a9a9a;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.2s 0.1s ease;
+}
+ol li track{
+    padding-right: 20px;
+}
+
+ol .slider{
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    height: 75px;
+    width:250px;
+    left:-9px;
+    top: -20px;
+    background-color: var(--blue);
+    transform: translateY(0);
+    transition: 0.2s ease-in;
+}
+
+input.slide{
+    display:none;
+}
+
+#tap1:checked ~ nav ol li:nth-child(1) a{
+    color:var(--white);
+}
+
+#tap2:checked ~ nav ol li:nth-child(2) a{
+    color:var(--white);
+    
+}
+
+#tap2:checked ~ nav ol .slider {
+    width: 200px;
+    transform: translateX(230px);
+}
+
+
+.container{
+    flex-direction: column;
+    height: 463px;
+    width: 830px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.384);
+    border-radius: 0 15px 15px 15px;
+    margin-right: 100px;
+    margin-left: 57px;
+    margin-bottom: 4rem;
+    padding-left: -5px;
+    padding-right: 50px;
+}
+
+.content1 {
+    display: block;
+}
+
+.content2{
+   display: none;
+}
+
+/*Payment Info*/
+
+.content1 .col{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 1rem;
+}
+
+.content1 p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.content1 .flex input{
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 310px;
+}
+
+.btn{
+    font-weight: 500;
+    background-color: #F49F1C;
+    padding: 0.6rem 1.8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 300px;  
+}
+
+.btn:hover{
+    background-color:var(--blue);
+    color: var(--yellow);
+}
+
+.content2{
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+.content2 h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info h3{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 300px;
+    margin-right: 210px;
+}
+
+.info span{
+    color: #F49F1C;
+}
