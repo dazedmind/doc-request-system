@@ -154,3 +154,15 @@ input {
     color: #F49F1C;
     text-decoration: none;
 }
+
+@media screen and (min-width:1700px) {
+    .info {
+        margin-top: 6rem;
+    }
+
+    img{
+        height: 30rem;
+        width: 30rem;
+        margin: 2rem 10rem;
+    }
+}

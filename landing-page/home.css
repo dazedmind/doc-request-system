@@ -76,6 +76,12 @@ p{
     font-weight: bold;
     margin-top: 3rem;
     cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.main-btn:hover {
+    background-color: #d28b22;
 }
 
 .current_page{

@@ -15,247 +15,128 @@
                 Document List
             </div>        
             <div class="documentform">
-                <form action="" method="">
-                    <div class="col">
-                        <div class="flex">
-                            <h2>Request for:</h2>
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="diploma" name="diploma">
-                                        <label for="diploma">Diploma</label>
+
+                <form action="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td style="width:40%">Request for:</td>
+                                <td style="width:20%">Price</td>
+                                <td style="width:20%">No. of copies</td>
+                                <td style="width:20%">Amount</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diploma</td>
+                                <td>550 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="diploma_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-                            
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox" id="tor" name="tor">
-                                        <label for="tor">Transcript of Records</label>
+                                </td>
+                                <td>
+                                    <input type="number" class="content1" id="diploma_amount" value="0"> 
+    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Transcript of Records</td>
+                                <td>241 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="tor_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-    
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="honorable" name="honorable">
-                                        <label for="honorable">Honorable Dismissal</label>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="tor_amount" value="0"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Honorable Dismissal</td>
+                                <td>146 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="honorable_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-    
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="grades" name="grades">
-                                        <label for="grades">Certificate of Grades</label>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="honorable_amount" value="0"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificate of Grades</td>
+                                <td>146 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="grades_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-                            
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="grad" name="grad">
-                                        <label for="grad">Certificate of Graduation</label>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="grades_amount" value="0"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificate of Graduation</td>
+                                <td>146 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="grad_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-    
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="units" name="units">
-                                        <label for="units">Certificate of Earned Units</label>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="grad_amount" value="0"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificate of Earned Units</td>
+                                <td>146 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="units_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="units_amount" value="0"> 
     
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="enrollment" name="enrollment">
-                                        <label for="enrollment">Certificate of Enrollment</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificate of Enrollment</td>
+                                <td>146 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="enrollment_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-    
-                            <div class="input-field1">
-                                <div class="input-flex1">
-                                        <input type="checkbox"  id="ched" name="ched">
-                                        <label for="ched">DFA/CHED Authentication <br>Of Student’s Record</label>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="enrollment_amount" value="0"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DFA/CHED Authentication Of Students Record</td>
+                                <td>584 pesos</td>
+                                <td>
+                                    <div class="input-field">
+                                        <div class="input-flex">
+                                        <input type="number" class="content" id="ched_copies" value="0" min="0" onchange="calculateAmount()">
                                     </div>
-                                </div>
-                        </div>
-    
-                        <div class="flex">
-                            <h2>Price</h2>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>550 Pesos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            <div class="input-field">
-                                <div class="input-flex">
-                                     <div class="price-list">
-                                <p>241 Pesos</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>146 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>146 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>146 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>146 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>146 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <div class="price-list">
-                                <p>584 Pesos</p>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
-    
-                    <div class="flex">
-                        <h2>No. of Copies</h2>
-                        <div class="input-field">
-                            <div class="input-flex">
-                            <input type="number" class="content" id="diploma_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="tor_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="honorable_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="grades_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content"  id="grad_copies" value="0" min="0" onchange="calculateAmount()">
-                  </div>
-                        </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="units_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="enrollment_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-    
-                            <div class="input-field">
-                                <div class="input-flex">
-                            <input type="number" class="content" id="ched_copies" value="0" min="0" onchange="calculateAmount()">
-                        </div>
-                    </div>
-                    </div>
-    
-                    <div class="flex">
-                        <div class="amount">
-                        <h2>Amount</h2>
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number" class="content1" id="diploma_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number"  class="content1" id="tor_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number"  class="content1" id="honorable_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number"  class="content1" id="grades_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number" class="content1" id="grad_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number" class="content1" id="units_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number" class="content1" id="enrollment_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <input type="number" class="content1" id="ched_amount" value="0"> 
-                    </div>
-                </div>
-    
-                        <div class="input-field">
-                            <div class="input-flex">
-                        <div class="amountext"><label for="total_amount">Total:</label></div>
-                        <div class="amountspace"><input type="number"  class="content1" id="total_amount" value="0"></div>
-                    </div>
-                </div>
-                        </div> 
-                    </div>
-                    </div>
+                                </td>
+                                <td>
+                                    <input type="number"  class="content1" id="ched_amount" value="0"> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
                 </form>
+                
     
                 <div class="note">
                     <p>If the document/s you wish to request are not <br>listed above, kindly contact the registrar at <br><span>registrar@pit.edu.ph</span> for further assistance.</p>

@@ -12,6 +12,11 @@ main {
     align-items: center;
 }
 
+table {
+    color: black;
+}
+
+
 input{
     display: flex;
     margin-top: 0.5rem;
